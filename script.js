@@ -29,14 +29,14 @@ function refresh(){
   var b = getSemiMinor(a,e);
   var w = window.innerWidth;
   var h = window.innerHeight;
-  var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w/3*2 - e*a : w/3*2);
+  var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w/4*3 - e*a : w/4*3);
   
   document.getElementById('a_descr').innerHTML = a;
   document.getElementById('e_descr').innerHTML = e;
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
-  drawEllipse(a,b,c,h/3*2,color_array[0],embellish);
+  drawEllipse(a,b,c,h/4*3,color_array[0],embellish);
   
 }
 
