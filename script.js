@@ -124,7 +124,9 @@ function save(){
     var old_color = color_array.shift();
     color_array.push(old_color);
   }
-  console.log(element_memory)
+    var a_slider = document.getElementById('slider_a')
+    a_slider.value = Number(a.slider.value())*1.1;
+  //console.log(element_memory)
   //drawEllipse(1.5*rx,1.5*ry,cx,cy,"red",embellish=Boolean(1));
 };
 
