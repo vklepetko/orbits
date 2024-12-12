@@ -29,7 +29,7 @@ function refresh(){
   var b = getSemiMinor(a,e);
   var w = window.innerWidth;
   var h = window.innerHeight;
-  var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w/4*3 - e*a : w/4*3);
+  var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w/3*2 - e*a : w/3*2);
   
   document.getElementById('a_descr').innerHTML = a;
   document.getElementById('e_descr').innerHTML = e;
