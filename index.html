@@ -1,0 +1,30 @@
+<html style="height: 100%">
+<body style="height: 100%; background-color: black">
+
+<div style="position: absolute; background-color:white; padding: 20px">
+<input id='checkbox_center_focus' type='checkbox' name='center_focus' checked='1'>
+<label for='center_focus'>Fixed focal point</label>
+<p></p>
+<input id='checkbox_ellipse_lines' type='checkbox' name='ellipse_lines' checked='1' onclick="refresh()">
+<label for='ellipse_lines'>Show ellipse axis</label>  
+  
+<div>
+<p>Semi-major axis (a)</p>
+<p id='a_descr'></p>
+<input id='slider_a' type='range' min='1' max='1000' value='200' oninput="refresh()">
+</div>
+  
+<div>
+<p>Eccentricity (e) </p>
+<p id='e_descr'></p>
+<input id='slider_e' type='range' min='0' max='100' oninput="refresh()">
+</div>  
+
+  <div>
+<button type='button' onclick="erase()">Clear all</button> 
+<button type='button' onclick="save()" style='background-color:green; color:white'>Add new</button> 
+ </div>  
+  </div>
+  
+</body>
+</html>
