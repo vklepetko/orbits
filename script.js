@@ -92,7 +92,7 @@ major.setAttribute("x1",cx-rx);
 major.setAttribute("y1",cy);
 major.setAttribute("x2",cx+rx);
 major.setAttribute("y2",cy);
-major.setAttribute("stroke-width","0.001");
+major.setAttribute("stroke-width","0.005");
 major.setAttribute("stroke","grey");
 major.setAttribute("stroke-dasharray","0.01");
 
