@@ -14,13 +14,13 @@
 <label for='ellipse_lines'>Show ellipse axis</label>  
   
 <div>
-<p>Semi-major axis (a)</p>
+<p>Semi-major axis (a):</p>
 <p id='a_descr'></p>
 <input id='slider_a' type='range' min='1' max='2000' value='39' oninput="refresh()">
 </div>
   
 <div>
-<p>Eccentricity (e) </p>
+<p>Eccentricity (e): </p>
 <p id='e_descr'></p>
 <input id='slider_e' type='range' min='0' max='100' value='20' oninput="refresh()">
 </div>  
@@ -30,7 +30,20 @@
 <button type='button' onclick="erase()">Clear all</button> 
 <button type='button' onclick="save()" style='background-color:green; color:white'>Add new</button> 
  </div>  
+<hr>
+  <p>Calculations</p>
+  <p>Semi-minor axis (b): </p>
+  <p id='b_descr'></p>
 
+  <p>Epsilon: </p>
+  <p id='epsi_descr'></p>
+
+  <p>Perihelion: </p>
+  <p id='peri_descr'></p>
+
+  <p>Aphelion: </p>
+  <p id='aphe_descr'></p>
+  
   <hr>
 
 <p>Orbital cheat-sheet</p>
@@ -89,20 +102,7 @@
     <td>0.25</td>
   </tr>
 </table>
-<hr>
-  <p>Calculations</p>
-  <p>Semi-minor axis (b) </p>
-  <p id='b_descr'></p>
 
-  <p>Epsilon </p>
-  <p id='epsi_descr'></p>
-
-  <p>Perihelion </p>
-  <p id='peri_descr'></p>
-
-  <p>Aphelion </p>
-  <p id='aphe_descr'></p>
-  
     </div>
 
 <script type="text/javascript" src="./script.js"></script>
