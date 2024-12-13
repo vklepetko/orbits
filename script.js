@@ -163,5 +163,5 @@ function erase(){
 
 document.body.appendChild(svg);
 window.onresize = refresh();
-refresh();
+drawMemory();
 
