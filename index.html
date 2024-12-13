@@ -11,7 +11,11 @@
 <label for='center_focus'>Fixed focal point</label>
 <p></p>
 <input id='checkbox_ellipse_lines' type='checkbox' name='ellipse_lines' checked='1' onclick="refresh()">
-<label for='ellipse_lines'>Show ellipse axis</label>  
+<label for='ellipse_lines'>Show ellipse axis</label>
+
+<p>Field of view [au]):</p>
+<p id='fov_descr'></p>
+<input id='slider_fov' type='range' min='1' max='100' value='1' oninput="zoom(this.value)">
   
 <div>
 <p>Semi-major axis (a):</p>
