@@ -6,10 +6,7 @@
 
 <div style="position: absolute; background-color:white; padding: 20px; top: 0; right: 0;">
   <p><b>Draw orbits yourself</b></p>
-<p>Field of view [au]:</p>
-<p id='fov_descr'></p>
-<input id='slider_fov' type='range' min='5' max='150' value='10' oninput="zoom(this.value)">
-  <hr>
+
 <button type='button' onclick="save()" style='background-color:green; color:white'>Add new</button> 
 <button type='button' onclick="erase()">Clear all</button> 
 
@@ -30,7 +27,11 @@
 <p id='e_descr'></p>
 <input id='slider_e' type='range' min='0' max='100' value='5' oninput="refresh()">
 </div>  
-
+<hr>
+  <p>Field of view [au]:</p>
+<p id='fov_descr'></p>
+<input id='slider_fov' type='range' min='5' max='150' value='10' oninput="zoom(this.value)">
+  <hr>
   <div>
     <p></p>
 
