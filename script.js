@@ -92,7 +92,7 @@ major.setAttribute("x1",cx-rx);
 major.setAttribute("y1",cy);
 major.setAttribute("x2",cx+rx);
 major.setAttribute("y2",cy);
-major.setAttribute("stroke-width","0.005");
+major.setAttribute("stroke-width","0.01");
 major.setAttribute("stroke","grey");
 major.setAttribute("stroke-dasharray","0.01");
 
@@ -103,7 +103,7 @@ minor.setAttribute("x1",cx);
 minor.setAttribute("y1",cy-ry);
 minor.setAttribute("x2",cx);
 minor.setAttribute("y2",cy+ry);
-minor.setAttribute("stroke-width","0.005");
+minor.setAttribute("stroke-width","0.01");
 minor.setAttribute("stroke","grey");
 minor.setAttribute("stroke-dasharray","0.01");
 
