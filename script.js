@@ -81,7 +81,7 @@ focus1.setAttribute("cy",cy);
 focus1.setAttribute("stroke","none");
 focus1.setAttribute("stroke-width","0.1");
 focus1.setAttribute("fill","gold");
-focus1.setAttribute("r","0.1");
+focus1.setAttribute("r","0.05");
   
 svg.appendChild(eli);
 svg.appendChild(focus1);
@@ -113,7 +113,7 @@ focus2.setAttribute("cy",cy);
 focus2.setAttribute("stroke","grey");
 focus2.setAttribute("fill","none");
 focus2.setAttribute("stroke-width","0.005");
-focus2.setAttribute("r","0.1");
+focus2.setAttribute("r","0.05");
 
 svg.appendChild(major);
 svg.appendChild(minor);
