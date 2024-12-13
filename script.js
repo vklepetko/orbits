@@ -36,6 +36,7 @@ function refresh(){
   document.getElementById('b_descr').innerHTML = b;
   document.getElementById('peri_descr').innerHTML = a-e*a;
   document.getElementById('aphe_descr').innerHTML = a+e*a;
+  console.log(e*a);
   document.getElementById('epsi_descr').innerHTML = e*a;
 
   drawMemory();
