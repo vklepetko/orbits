@@ -33,6 +33,9 @@ function refresh(){
   
   document.getElementById('a_descr').innerHTML = a;
   document.getElementById('e_descr').innerHTML = e;
+  document.getElementById('b_descr').innerHTML = b;
+  document.getElementById('peri_descr').innerHTML = a-e*a;
+  document.getElementById('aphe_descr').innerHTML = a+e*a;
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
