@@ -15,12 +15,12 @@
 
 <p>Field of view [au]:</p>
 <p id='fov_descr'></p>
-<input id='slider_fov' type='range' min='0.25' max='50' value='10' oninput="zoom(this.value)">
+<input id='slider_fov' type='range' min='5' max='50' value='10' oninput="zoom(this.value)">
   
 <div>
 <p>Semi-major axis (a):</p>
 <p id='a_descr'></p>
-<input id='slider_a' type='range' min='0' max='50' value='1' oninput="refresh()">
+<input id='slider_a' type='range' min='0' max='50' step="0.1" value='1' oninput="refresh()">
 </div>
   
 <div>
