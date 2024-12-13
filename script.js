@@ -31,13 +31,12 @@ function refresh(){
   var h = window.innerHeight;
   var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w*0.618 - e*a : w*0.618);
   
-  document.getElementById('a_descr').innerHTML = a;
-  document.getElementById('e_descr').innerHTML = e;
-  document.getElementById('b_descr').innerHTML = b;
-  document.getElementById('peri_descr').innerHTML = a-e*a;
-  document.getElementById('aphe_descr').innerHTML = a+e*a;
-  console.log(e*a);
-  document.getElementById('epsi_descr').innerHTML = e*a;
+  document.getElementById('a_descr').innerHTML = a.to_fixed(2);
+  document.getElementById('e_descr').innerHTML = e.to_fixed(2);
+  document.getElementById('b_descr').innerHTML = b.to_fixed(2);
+  document.getElementById('peri_descr').innerHTML = (a-e*a).to_fixed(2);
+  document.getElementById('aphe_descr').innerHTML = (a+e*a).to_fixed(2);
+  document.getElementById('epsi_descr').innerHTML = (e*a).to_fixed(2);
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
