@@ -162,6 +162,6 @@ function erase(){
 //drawEllipse(100,100);
 
 document.body.appendChild(svg);
-window.onresize = refresh();
+//window.onresize = refresh();
 drawMemory();
 
