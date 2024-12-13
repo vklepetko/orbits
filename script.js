@@ -6,6 +6,7 @@ var svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
 svg.setAttribute("width","100%");
 svg.setAttribute("height","100%");
 svg.setAttribute("preserveAspectRatio","none");
+zoom(1);
 
 
 function drawMemory(){
@@ -21,16 +22,24 @@ function drawMemory(){
   };
 };
 
+function zoom(fov){
+	var slope = window.innerHeight/window.innerWidth;
+	var viewbox_string = String(-fov/2) + " " + String(slope *-fov/2) + " " + String(fov) +" "+ String(slope * fov);
+    svg.setAttribute('viewBox', viewbox_string); 
+ }
+
 function refresh(){
   svg.innerHTML = "";
   
   var a = Number(document.getElementById('slider_a').value);
   var e = Number(document.getElementById('slider_e').value)/100;
   var b = getSemiMinor(a,e);
-  var w = window.innerWidth;
-  var h = window.innerHeight;
-  var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w*0.618 - e*a : w*0.618);
-  
+  //var w = window.innerWidth;
+  //var h = window.innerHeight;
+  //var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w*0.618 - e*a : w*0.618);
+  var cx = -a*e;
+  var cy = 0;
+    
   document.getElementById('a_descr').innerHTML = a.toFixed(2);
   document.getElementById('e_descr').innerHTML = e.toFixed(2);
   document.getElementById('b_descr').innerHTML = b.toFixed(2);
@@ -40,7 +49,7 @@ function refresh(){
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
-  drawEllipse(a,b,c,h/2,color_array[0],embellish);
+  drawEllipse(a,b,cx,cy,color_array[0],embellish);
   
 }
 
@@ -52,12 +61,6 @@ function getSemiMinor(a,e){
 
 function drawEllipse(rx,ry,cx,cy,color,embellish=Boolean(0)){
 
-//var rx = Number(rx);
-//var ry = Number(ry);
-
-epsilon = Math.pow((Math.pow(rx,2)-Math.pow(ry,2)),1/2);
-  
-    
 
 var eli = document.createElementNS("http://www.w3.org/2000/svg","ellipse");
 
@@ -69,7 +72,9 @@ eli.setAttribute("class","ellipse");
 eli.setAttribute("fill","none");
 eli.setAttribute("stroke",color);
 eli.setAttribute("stroke-width","3");
-  
+
+epsilon = Math.pow((Math.pow(rx,2)-Math.pow(ry,2)),1/2);
+    
 var focus1 = document.createElementNS("http://www.w3.org/2000/svg","circle");
 focus1.setAttribute("cx",cx+epsilon);
 focus1.setAttribute("cy",cy);
@@ -105,10 +110,6 @@ focus2.setAttribute("cy",cy);
 focus2.setAttribute("stroke","grey");
 focus2.setAttribute("fill","none");
 focus2.setAttribute("r","5");
-
-
-
-
 
 svg.appendChild(major);
 svg.appendChild(minor);
