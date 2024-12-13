@@ -153,7 +153,7 @@ function save(){
 
 function erase(){
   element_memory = [];
-  document.getElementById('slider_a').value = 39;
+  document.getElementById('slider_a').value = 1;
   document.getElementById('slider_e').value = 20;
   svg.innerHTML = "";
   refresh();
