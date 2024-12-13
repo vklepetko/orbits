@@ -112,7 +112,7 @@ focus2.setAttribute("cx",cx-epsilon);
 focus2.setAttribute("cy",cy);
 focus2.setAttribute("stroke","grey");
 focus2.setAttribute("fill","none");
-focus2.setAttribute("stroke-width","0.1");
+focus2.setAttribute("stroke-width","0.01");
 focus2.setAttribute("r","0.1");
 
 svg.appendChild(major);
