@@ -71,7 +71,7 @@ eli.setAttribute("ry",ry);
 eli.setAttribute("class","ellipse");
 eli.setAttribute("fill","none");
 eli.setAttribute("stroke",color);
-eli.setAttribute("stroke-width","0.01");
+eli.setAttribute("stroke-width","0.05");
 
 epsilon = Math.pow((Math.pow(rx,2)-Math.pow(ry,2)),1/2);
     
