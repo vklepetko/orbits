@@ -60,7 +60,7 @@ function refresh(){
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
-  drawEllipse(a,b,cx,cy,color_array[0],embellish);
+  //drawEllipse(a,b,cx,cy,color_array[0],embellish);
   
 }
 
