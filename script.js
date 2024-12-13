@@ -71,7 +71,7 @@ eli.setAttribute("ry",ry);
 eli.setAttribute("class","ellipse");
 eli.setAttribute("fill","none");
 eli.setAttribute("stroke",color);
-eli.setAttribute("stroke-width","3");
+eli.setAttribute("stroke-width","0.1");
 
 epsilon = Math.pow((Math.pow(rx,2)-Math.pow(ry,2)),1/2);
     
@@ -80,7 +80,7 @@ focus1.setAttribute("cx",cx+epsilon);
 focus1.setAttribute("cy",cy);
 focus1.setAttribute("stroke","black");
 focus1.setAttribute("fill","gold");
-focus1.setAttribute("r","5");
+focus1.setAttribute("r","0.1");
   
 svg.appendChild(eli);
 svg.appendChild(focus1);
@@ -92,7 +92,7 @@ major.setAttribute("y1",cy);
 major.setAttribute("x2",cx+rx);
 major.setAttribute("y2",cy);
 major.setAttribute("stroke","grey");
-major.setAttribute("stroke-dasharray","5");
+major.setAttribute("stroke-dasharray","0.1");
 
   
 
@@ -102,14 +102,14 @@ minor.setAttribute("y1",cy-ry);
 minor.setAttribute("x2",cx);
 minor.setAttribute("y2",cy+ry);
 minor.setAttribute("stroke","grey");
-minor.setAttribute("stroke-dasharray","5");
+minor.setAttribute("stroke-dasharray","0.1");
 
 var focus2 = document.createElementNS("http://www.w3.org/2000/svg","circle");
 focus2.setAttribute("cx",cx-epsilon);
 focus2.setAttribute("cy",cy);
 focus2.setAttribute("stroke","grey");
 focus2.setAttribute("fill","none");
-focus2.setAttribute("r","5");
+focus2.setAttribute("r","0.1");
 
 svg.appendChild(major);
 svg.appendChild(minor);
