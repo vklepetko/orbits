@@ -25,7 +25,8 @@ function drawMemory(){
 function zoom(fov){
 	var slope = window.innerHeight/window.innerWidth;
 	var viewbox_string = String(-fov/2) + " " + String(slope *-fov/2) + " " + String(fov) +" "+ String(slope * fov);
-    svg.setAttribute('viewBox', viewbox_string); 
+    	svg.setAttribute('viewBox', viewbox_string);
+	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
  }
 
 function refresh(){
