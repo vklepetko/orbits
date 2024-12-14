@@ -57,6 +57,7 @@ function refresh(){
   document.getElementById('peri_descr').innerHTML = (a-e*a).toFixed(2);
   document.getElementById('aphe_descr').innerHTML = (a+e*a).toFixed(2);
   document.getElementById('epsi_descr').innerHTML = (e*a).toFixed(2);
+  document.getElementById('period_descr').innerHTML = Math.sqrt(a**3).toFixed(2);
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
