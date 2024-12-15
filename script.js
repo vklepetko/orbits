@@ -176,7 +176,7 @@ function erase(){
 
 document.body.appendChild(svg);
 //window.onresize = refresh();
-document.getElementById('slider_a').value = 5;
 
 drawMemory();
+zoom(5);
 
