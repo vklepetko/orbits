@@ -18,6 +18,14 @@ svg.setAttribute("height","100%");
 //svg.setAttribute("preserveAspectRatio","none");
 zoom(document.getElementById('slider_fov').value);
 
+var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
+anim.setAttribute('attributeName','viewBox');
+anim.setAttribute('to','5 5 10 10');
+anim.setAttribute('dur','3s');
+anim.setAttribute('fill','freeze');
+
+svg.appendChild(anim);
+
 
 function drawMemory(){
     
@@ -32,10 +40,13 @@ function drawMemory(){
   };
 };
 
-function zoom(fov){
+function getViewBoxString(fov):
 	var slope = window.innerHeight/window.innerWidth;
 	var viewbox_string = String(-fov/2) + " " + String(slope *-fov/2) + " " + String(fov) +" "+ String(slope * fov);
-    	svg.setAttribute('viewBox', viewbox_string);
+	return viewbox_string;
+
+function zoom(fov){
+    	svg.setAttribute('viewBox', getViewBoxString(fov));
 	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
  }
 
