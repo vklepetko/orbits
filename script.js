@@ -10,7 +10,7 @@ var element_memory = [
 ["-0.3018","0","30.1805","30.179","#4169E1"],
 ["-9.6328","0","39.4786","38.2854","#D8DEE9"]
 ];
-var color_array = ["#BF00FF","#FF1493","#32CD32","#008080","#FFBF00", "#DC143C", "#DC143C", "#00CED1",  ];
+var color_array = ["#D8DEE9","#4169E1", "#40E0D0", "#F4A460","#D2691E", "#B22222", "#4682B4", "#FFD700", "#9E9E9E"   ];
 
 var svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
 svg.setAttribute("width","100%");
@@ -50,6 +50,7 @@ function getViewBoxString(fov){
 function zoom(fov){
     	svg.setAttribute('viewBox', getViewBoxString(fov));
 	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
+	refresh();
  };
 
 function refresh(){
