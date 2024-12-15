@@ -23,7 +23,6 @@ anim.setAttribute('attributeName','viewBox');
 anim.setAttribute('to','5 5 10 10');
 anim.setAttribute('dur','3s');
 anim.setAttribute('fill','freeze');
-
 svg.appendChild(anim);
 
 
@@ -40,15 +39,16 @@ function drawMemory(){
   };
 };
 
-function getViewBoxString(fov):
+function getViewBoxString(fov){
 	var slope = window.innerHeight/window.innerWidth;
 	var viewbox_string = String(-fov/2) + " " + String(slope *-fov/2) + " " + String(fov) +" "+ String(slope * fov);
 	return viewbox_string;
+};
 
 function zoom(fov){
     	svg.setAttribute('viewBox', getViewBoxString(fov));
 	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
- }
+ };
 
 function refresh(){
   svg.innerHTML = "";
@@ -74,7 +74,7 @@ function refresh(){
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
   drawEllipse(a,b,cx,cy,color_array[0],embellish);
   
-}
+};
 
 
 
