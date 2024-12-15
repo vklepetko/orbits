@@ -7,7 +7,7 @@
 <div style="position: absolute; background-color:white; padding: 15px; top: 0; right: 0; width: 25%; max-width: 200px;">
 <img src='space-dog.jpeg' style="max-width: 100%; max-height: 100%">
   
-  <p><b>Draw orbits yourself</b></p>
+  <p><b>Draw orbits yourself!</b></p>
 
 <button type='button' onclick="save()" style='background-color:green; color:white'>Add new</button> 
 <button type='button' onclick="erase()">Clear all</button> 
@@ -19,7 +19,7 @@
 
   
 <div>
-<p>Semi-major axis (a):</p>
+<p>Semi-major axis (a) [au]:</p>
 <p id='a_descr'></p>
 <input id='slider_a' type='range' min='0' max='50' step="0.1" value='1' oninput="refresh()" style="width: 90%">
 </div>
@@ -32,7 +32,7 @@
 <hr>
   <p>Field of view [au]:</p>
 <p id='fov_descr'></p>
-<input id='slider_fov' type='range' min='5' max='150' value='10' oninput="zoom(this.value)" style="width: 90%">
+<input id='slider_fov' type='range' min='5' max='150' value='5' oninput="zoom(this.value)" style="width: 90%">
   <div>
     <p></p>
 
@@ -42,22 +42,28 @@
   <table>
     <tr>
       <td>Semi-minor axis:</td>
-      <td id='b_descr'></td></tr>
+      <td id='b_descr'></td>
+      <td>au</td>
+    </tr>
     <tr>
       <td>Epsilon:</td>
       <td id='epsi_descr'></td>
+      <td>au</td>
     </tr>
     <tr>
       <td>Perihelion:</td>
       <td id='peri_descr'></td>
+      <td>au</td>
     </tr>
     <tr>
       <td>Aphelion:</td>
       <td id='aphe_descr'></td>
+      <td>au</td>
     </tr>
     <tr>
       <td>Orbital period:</td>
       <td id='period_descr'></td>
+      <td>years</td>
     </tr>
   </table>
   
