@@ -20,7 +20,7 @@ zoom(document.getElementById('slider_fov').value);
 
 var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
 anim.setAttribute('attributeName','viewBox');
-anim.setAttribute('to','5 5 10 10');
+anim.setAttribute('to',getViewBoxString(5));
 anim.setAttribute('dur','3s');
 anim.setAttribute('fill','freeze');
 svg.appendChild(anim);
