@@ -20,8 +20,8 @@ var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
 anim.setAttribute('attributeName','viewBox');
 anim.setAttribute('to',getViewBoxString(20));
 anim.setAttribute('dur','1s');
-anim.setAttribute('fill','freeze');
-//anim.setAttribute('onend','zoom(20)');
+//anim.setAttribute('fill','freeze');
+anim.setAttribute('onend','zoom(20)');
 svg.appendChild(anim);
 
 
