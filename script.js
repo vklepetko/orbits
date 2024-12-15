@@ -15,8 +15,9 @@ var color_array = ["#dc4048","#7acdf1","#feb913","#f6821f","#003f6b" ];
 var svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
 svg.setAttribute("width","100%");
 svg.setAttribute("height","100%");
+svg.setAttribute('viewBox',getViewBoxString(150));
 //svg.setAttribute("preserveAspectRatio","none");
-zoom(150);
+//zoom(150);
 
 var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
 anim.setAttribute('attributeName','viewBox');
