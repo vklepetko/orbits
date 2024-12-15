@@ -10,7 +10,7 @@ var element_memory = [
 ["-0.3018","0","30.1805","30.179","#4169E1"],
 ["-9.6328","0","39.4786","38.2854","#D8DEE9"]
 ];
-var color_array = ["#dc4048","#7acdf1","#feb913","#f6821f","#003f6b" ];
+var color_array = ["#BF00FF","#FF1493","#32CD32","#008080","#FFBF00", "#DC143C", "#DC143C", "#00CED1",  ];
 
 var svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
 svg.setAttribute("width","100%");
