@@ -12,12 +12,8 @@ var element_memory = [
 ];
 var color_array = ["#D8DEE9","#4169E1", "#40E0D0", "#F4A460","#D2691E", "#B22222", "#4682B4", "#FFD700", "#9E9E9E"   ];
 
-var svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
-svg.setAttribute("width","100%");
-svg.setAttribute("height","100%");
+var svg = document.getElementById('svg');
 svg.setAttribute('viewBox',getViewBoxString(150));
-//svg.setAttribute("preserveAspectRatio","none");
-//zoom(150);
 
 var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
 anim.setAttribute('attributeName','viewBox');
@@ -175,7 +171,7 @@ function erase(){
 
 //drawEllipse(100,100);
 
-document.body.appendChild(svg);
+//document.body.appendChild(svg);
 //window.onresize = refresh();
 
 drawMemory();
