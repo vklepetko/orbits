@@ -50,7 +50,6 @@ function getViewBoxString(fov){
 function zoom(fov){
     	svg.setAttribute('viewBox', getViewBoxString(fov));
 	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
-	refresh();
  };
 
 function refresh(){
