@@ -24,6 +24,7 @@ anim.setAttribute('attributeName','viewBox');
 anim.setAttribute('to',getViewBoxString(5));
 anim.setAttribute('dur','2s');
 anim.setAttribute('fill','freeze');
+anim.setAttribute('onend','zoom(5)');
 svg.appendChild(anim);
 
 
@@ -178,5 +179,5 @@ document.body.appendChild(svg);
 //window.onresize = refresh();
 
 drawMemory();
-zoom(5);
+//zoom(5);
 
