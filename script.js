@@ -21,7 +21,7 @@ svg.setAttribute('viewBox',getViewBoxString(150));
 
 var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
 anim.setAttribute('attributeName','viewBox');
-anim.setAttribute('to',getViewBoxString(5));
+anim.setAttribute('to',getViewBoxString(10));
 anim.setAttribute('dur','2s');
 anim.setAttribute('fill','freeze');
 svg.appendChild(anim);
