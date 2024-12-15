@@ -13,6 +13,7 @@ var element_memory = [
 var color_array = ["#D8DEE9","#4169E1", "#40E0D0", "#F4A460","#D2691E", "#B22222", "#4682B4", "#FFD700", "#9E9E9E"   ];
 
 var svg = document.getElementById('svg');
+svg.innerHTML = "";
 svg.setAttribute('viewBox',getViewBoxString(150));
 
 var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
