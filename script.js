@@ -24,7 +24,7 @@ anim.setAttribute('attributeName','viewBox');
 anim.setAttribute('to',getViewBoxString(15));
 anim.setAttribute('dur','1s');
 anim.setAttribute('fill','freeze');
-anim.setAttribute('onend','zoom(15)');
+anim.setAttribute('onend','zoom(20)');
 svg.appendChild(anim);
 
 
