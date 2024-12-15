@@ -21,7 +21,7 @@ zoom(150);
 var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
 anim.setAttribute('attributeName','viewBox');
 anim.setAttribute('to',getViewBoxString(5));
-anim.setAttribute('dur','3s');
+anim.setAttribute('dur','2s');
 anim.setAttribute('fill','freeze');
 svg.appendChild(anim);
 
