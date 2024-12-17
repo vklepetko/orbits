@@ -48,7 +48,7 @@ function zoom(fov){
 	var svg = document.getElementById('svg');
     	svg.setAttribute('viewBox', getViewBoxString(fov));
 	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
-	document.getElementById('a_descr').max = (Number(fov)*2/3).toFixed(0)
+	document.getElementById('slider_a').max = (Number(fov)*2/3).toFixed(0);
  };
 
 function refresh(){
