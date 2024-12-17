@@ -162,7 +162,7 @@ svg.appendChild(focus2);
 function save(){
   ellipses = document.getElementsByClassName('ellipse');
   for (var i = 0; i < ellipses.length; i++) {
-	  if (ellipses[i].tagname=='ellipse'){
+	  if (ellipses[i].tagName=='ellipse'){
 	    var rx = ellipses[i].getAttribute("rx");
 	    var ry = ellipses[i].getAttribute("ry");
 	    var cx = ellipses[i].getAttribute("cx");
@@ -172,7 +172,7 @@ function save(){
 	    var old_color = color_array.shift();
 	    color_array.push(old_color);
 	  }
-	  else if (ellipses[i].tagname=='line'){
+	  else if (ellipses[i].tagName=='line'){
 
 	    var rx = (ellipses[i].getAttribute("x2") - ellipses[i].getAttribute("x1"))/2 ;
 	    var ry = 0;
