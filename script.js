@@ -61,7 +61,7 @@ function refresh(){
   var cy = 0;
     
   document.getElementById('textbox_a').value = a.toFixed(2);
-  document.getElementById('textbox_b').value = e.toFixed(2);
+  document.getElementById('textbox_e').value = e.toFixed(2);
   document.getElementById('b_descr').innerHTML = b.toFixed(2);
   document.getElementById('peri_descr').innerHTML = (a-e*a).toFixed(2);
   document.getElementById('aphe_descr').innerHTML = (a+e*a).toFixed(2);
