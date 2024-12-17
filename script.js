@@ -63,8 +63,8 @@ function refresh(){
   var cx = -a*e;
   var cy = 0;
     
-  document.getElementById('a_descr').innerHTML = a.toFixed(2);
-  document.getElementById('e_descr').innerHTML = e.toFixed(2);
+  document.getElementById('textbox_a').value = a.toFixed(2);
+  document.getElementById('textbox_b').value = e.toFixed(2);
   document.getElementById('b_descr').innerHTML = b.toFixed(2);
   document.getElementById('peri_descr').innerHTML = (a-e*a).toFixed(2);
   document.getElementById('aphe_descr').innerHTML = (a+e*a).toFixed(2);
