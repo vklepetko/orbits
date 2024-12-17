@@ -84,7 +84,19 @@ function getSemiMinor(a,e){
 
 function drawEllipse(rx,ry,cx,cy,color,embellish=Boolean(0)){
 
-
+if (ry==0){
+	var eli = document.createElementNS("http://www.w3.org/2000/svg","line");
+	eli.setAttribute("x1",-rx);
+	eli.setAttribute("y1",0);
+	eli.setAttribute("x2",rx);
+	eli.setAttribute("y2",0);	
+	eli.setAttribute("class","ellipse");
+	eli.setAttribute("fill","none");
+	eli.setAttribute("stroke",color);
+	eli.setAttribute("stroke-width","0.05");	
+}
+else{
+	
 var eli = document.createElementNS("http://www.w3.org/2000/svg","ellipse");
 
 eli.setAttribute("cx",cx);
@@ -94,7 +106,10 @@ eli.setAttribute("ry",ry);
 eli.setAttribute("class","ellipse");
 eli.setAttribute("fill","none");
 eli.setAttribute("stroke",color);
-eli.setAttribute("stroke-width","0.05");
+eli.setAttribute("stroke-width","0.05");	
+};
+	
+
 
 epsilon = Math.pow((Math.pow(rx,2)-Math.pow(ry,2)),1/2);
     
