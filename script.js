@@ -176,7 +176,7 @@ function save(){
 
 	    var rx = (ellipses[i].getAttribute("x2") - ellipses[i].getAttribute("x1"))/2 ;
 	    var ry = 0;
-	    var cx = ellipses[i].getAttribute("x1") + rx;
+	    var cx = Number(ellipses[i].getAttribute("x1")) + Number(rx);
 	    var cy = 0;
 	    var color = ellipses[i].getAttribute("stroke");;	
 
