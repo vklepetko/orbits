@@ -171,7 +171,7 @@ function save(){
 	    element_memory.push([cx,cy,rx,ry,color]);
 	    var old_color = color_array.shift();
 	    color_array.push(old_color);
-	  };
+	  }
 	  else if (ellipses[i].tagname=='line'){
 
 	    var rx = (ellipses[i].getAttribute("x2") - ellipses[i].getAttribute("x1"))/2 ;
@@ -184,7 +184,7 @@ function save(){
 	    var old_color = color_array.shift();
 	    color_array.push(old_color);
 	  }
-  }
+  };
     var a_slider = document.getElementById('slider_a')
     a_slider.value = Number(a_slider.value)*2;
     refresh();
