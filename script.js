@@ -174,9 +174,9 @@ function save(){
 	  }
 	  else if (ellipses[i].tagName=='line'){
 
-	    var rx = ellipses[i].getAttribute("x1") ;
+	    var rx = (ellipses[i].getAttribute("x2")-ellipses[i].getAttribute("x1")) ;
 	    var ry = 0;
-	    var cx = 0
+	    var cx = ellipses[i].getAttribute("x1") + rx;
 	    var cy = 0;
 	    var color = ellipses[i].getAttribute("stroke");;	
 
