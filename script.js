@@ -162,14 +162,28 @@ svg.appendChild(focus2);
 function save(){
   ellipses = document.getElementsByClassName('ellipse');
   for (var i = 0; i < ellipses.length; i++) {
-    var rx = ellipses[i].getAttribute("rx");
-    var ry = ellipses[i].getAttribute("ry");
-    var cx = ellipses[i].getAttribute("cx");
-    var cy = ellipses[i].getAttribute("cy");
-    var color = ellipses[i].getAttribute("stroke");;
-    element_memory.push([cx,cy,rx,ry,color]);
-    var old_color = color_array.shift();
-    color_array.push(old_color);
+	  if (ellipses[i].tagname=='ellipse'){
+	    var rx = ellipses[i].getAttribute("rx");
+	    var ry = ellipses[i].getAttribute("ry");
+	    var cx = ellipses[i].getAttribute("cx");
+	    var cy = ellipses[i].getAttribute("cy");
+	    var color = ellipses[i].getAttribute("stroke");;
+	    element_memory.push([cx,cy,rx,ry,color]);
+	    var old_color = color_array.shift();
+	    color_array.push(old_color);
+	  };
+	  else if (ellipses[i].tagname=='line'){
+
+	    var rx = (ellipses[i].getAttribute("x2") - ellipses[i].getAttribute("x1"))/2 ;
+	    var ry = 0;
+	    var cx = ellipses[i].getAttribute("x1") + rx;
+	    var cy = 0;
+	    var color = ellipses[i].getAttribute("stroke");;	
+
+	    element_memory.push([cx,cy,rx,ry,color]);
+	    var old_color = color_array.shift();
+	    color_array.push(old_color);
+	  }
   }
     var a_slider = document.getElementById('slider_a')
     a_slider.value = Number(a_slider.value)*2;
