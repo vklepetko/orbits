@@ -57,9 +57,6 @@ function refresh(){
   var a = Number(document.getElementById('slider_a').value);
   var e = Number(document.getElementById('slider_e').value)/100;
   var b = getSemiMinor(a,e);
-  //var w = window.innerWidth;
-  //var h = window.innerHeight;
-  //var c = ((Number(document.getElementById('checkbox_center_focus').checked) ==1) ?  w*0.618 - e*a : w*0.618);
   var cx = -a*e;
   var cy = 0;
     
