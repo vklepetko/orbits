@@ -18,7 +18,7 @@ svg.setAttribute('viewBox',getViewBoxString(150));
 
 var anim = document.createElementNS("http://www.w3.org/2000/svg","animate");
 anim.setAttribute('attributeName','viewBox');
-anim.setAttribute('to',getViewBoxString(20));
+anim.setAttribute('to',getViewBoxString(21));
 anim.setAttribute('dur','1s');
 //anim.setAttribute('fill','freeze');
 anim.setAttribute('onend','zoom(21)');
@@ -48,6 +48,7 @@ function zoom(fov){
 	var svg = document.getElementById('svg');
     	svg.setAttribute('viewBox', getViewBoxString(fov));
 	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
+	document.getElementById('a_descr').max = (Number(fov)*2/3).toFixed(0)
  };
 
 function refresh(){
