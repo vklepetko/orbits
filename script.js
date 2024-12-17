@@ -86,9 +86,9 @@ function drawEllipse(rx,ry,cx,cy,color,embellish=Boolean(0)){
 
 if (ry==0){
 	var eli = document.createElementNS("http://www.w3.org/2000/svg","line");
-	eli.setAttribute("x1",-rx);
+	eli.setAttribute("x1",cx-rx);
 	eli.setAttribute("y1",0);
-	eli.setAttribute("x2",rx);
+	eli.setAttribute("x2",cx+rx);
 	eli.setAttribute("y2",0);	
 	eli.setAttribute("class","ellipse");
 	eli.setAttribute("fill","none");
