@@ -91,7 +91,7 @@ if (ry==0){
 	eli.setAttribute("class","ellipse");
 	eli.setAttribute("fill","none");
 	eli.setAttribute("stroke",color);
-	eli.setAttribute("stroke-width","0.05");	
+	eli.setAttribute("stroke-width","0.025");	
 }
 else{
 	
@@ -104,7 +104,7 @@ eli.setAttribute("ry",ry);
 eli.setAttribute("class","ellipse");
 eli.setAttribute("fill","none");
 eli.setAttribute("stroke",color);
-eli.setAttribute("stroke-width","0.05");	
+eli.setAttribute("stroke-width","0.025");	
 };
 	
 
