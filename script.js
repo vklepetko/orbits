@@ -54,8 +54,8 @@ function zoom(fov){
 function refresh(){
   svg.innerHTML = "";
   
-  var a = Number(document.getElementById('slider_a').value);
-  var e = Number(document.getElementById('slider_e').value)/100;
+  var a = Number(document.getElementById('textbox_a').value);
+  var e = Number(document.getElementById('textbox_e').value);
   var b = getSemiMinor(a,e);
   var cx = -a*e;
   var cy = 0;
