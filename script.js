@@ -47,7 +47,7 @@ function getViewBoxString(fov){
 function zoom(fov){
 	var svg = document.getElementById('svg');
     	svg.setAttribute('viewBox', getViewBoxString(fov));
-	document.getElementById('fov_descr').innerHTML = Number(fov).toFixed(2);
+	document.getElementById('textbox_fov').value = Number(fov).toFixed(0);
 	document.getElementById('slider_a').max = (Number(fov)/2).toFixed(0);
  };
 
