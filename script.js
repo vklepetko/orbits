@@ -203,7 +203,7 @@ function updateTextboxA(val){
 };
 
 function updateTextboxE(val){
-	document.getElementById('textbox_e').value = val;
+	document.getElementById('textbox_e').value = val/100;
 };
 //drawEllipse(100,100);
 
