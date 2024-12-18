@@ -198,12 +198,13 @@ function erase(){
   refresh();
 };
 
-function updateTextboxA(val):
+function updateTextboxA(val){
 	document.getElementById('textbox_a').value = val;
+};
 
-function updateTextboxE(val):
+function updateTextboxE(val){
 	document.getElementById('textbox_e').value = val;
-
+};
 //drawEllipse(100,100);
 
 //document.body.appendChild(svg);
