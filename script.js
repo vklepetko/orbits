@@ -183,7 +183,7 @@ function save(){
 	    color_array.push(old_color);
 	  }
   };
-    var a_slider = document.getElementById('slider_a')
+    var a_slider = document.getElementById('textbox_a');
     a_slider.value = Number(a_slider.value)*2;
     refresh();
   console.log(element_memory)
