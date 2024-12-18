@@ -60,13 +60,13 @@ function refresh(){
   var cx = -a*e;
   var cy = 0;
     
-  document.getElementById('textbox_a').value = a.toFixed(2);
-  document.getElementById('textbox_e').value = e.toFixed(2);
-  document.getElementById('b_descr').innerHTML = b.toFixed(2);
-  document.getElementById('peri_descr').innerHTML = (a-e*a).toFixed(2);
-  document.getElementById('aphe_descr').innerHTML = (a+e*a).toFixed(2);
-  document.getElementById('epsi_descr').innerHTML = (e*a).toFixed(2);
-  document.getElementById('period_descr').innerHTML = Math.sqrt(a**3).toFixed(2);
+  document.getElementById('textbox_a').value = a.toFixed(5);
+  document.getElementById('textbox_e').value = e.toFixed(5);
+  document.getElementById('b_descr').innerHTML = b.toFixed(3);
+  document.getElementById('peri_descr').innerHTML = (a-e*a).toFixed(3);
+  document.getElementById('aphe_descr').innerHTML = (a+e*a).toFixed(3);
+  document.getElementById('epsi_descr').innerHTML = (e*a).toFixed(3);
+  document.getElementById('period_descr').innerHTML = Math.sqrt(a**3).toFixed(3);
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
