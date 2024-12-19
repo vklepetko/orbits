@@ -51,7 +51,7 @@ function zoom(fov){
 	document.getElementById('slider_a').max = (Number(fov)/2).toFixed(0);
  };
 
-function refresh_calculations(a,e){
+function refreshCalculations(a,e){
   document.getElementById('textbox_a').value = a;
   document.getElementById('textbox_e').value = e;
   document.getElementById('b_descr').innerHTML = getSemiMinor(a,e).toFixed(3);
