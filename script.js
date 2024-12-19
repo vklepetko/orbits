@@ -221,6 +221,7 @@ function init(){
 	updateTextboxE(e*100);
   	document.getElementById('slider_a').value = 5;
   	document.getElementById('slider_e').value = 60;
+	refresh();
 }
 
 drawMemory();
