@@ -121,7 +121,7 @@ var focus1 = document.createElementNS("http://www.w3.org/2000/svg","circle");
 focus1.setAttribute("cx",cx+epsilon);
 focus1.setAttribute("cy",cy);
 focus1.setAttribute("stroke","none");
-focus1.setAttribute("stroke-width","0.1");
+focus1.setAttribute("stroke-width","0.025");
 focus1.setAttribute("fill","gold");
 focus1.setAttribute("r","0.05");
   
@@ -136,7 +136,7 @@ major.setAttribute("x2",cx+rx);
 major.setAttribute("y2",cy);
 major.setAttribute("stroke-width","0.025");
 major.setAttribute("stroke","grey");
-major.setAttribute("stroke-dasharray","0.025");
+major.setAttribute("stroke-dasharray","0.01");
 
   
 
@@ -147,7 +147,7 @@ minor.setAttribute("x2",cx);
 minor.setAttribute("y2",cy+ry);
 minor.setAttribute("stroke-width","0.025");
 minor.setAttribute("stroke","grey");
-minor.setAttribute("stroke-dasharray","0.025");
+minor.setAttribute("stroke-dasharray","0.01");
 
 var focus2 = document.createElementNS("http://www.w3.org/2000/svg","circle");
 focus2.setAttribute("cx",cx-epsilon);
