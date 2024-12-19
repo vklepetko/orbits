@@ -211,6 +211,15 @@ function updateTextboxE(val){
 //document.body.appendChild(svg);
 //window.onresize = refresh();
 
+function init(){
+	a = 5;
+	e = 0.6;
+	[cx,cy] = getEllipseCenter(a,e);
+	drawEllipse(cx,cy,a, getSemiMinor(a,e),color_array[0],Bolean(1));
+}
+
 drawMemory();
+init();
+
 //zoom(5);
 
