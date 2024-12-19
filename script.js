@@ -215,7 +215,7 @@ function init(){
 	a = 5;
 	e = 0.6;
 	[cx,cy] = getEllipseCenter(a,e);
-	drawEllipse(cx,cy,a, getSemiMinor(a,e),color_array[0],Bolean(1));
+	drawEllipse(cx,cy,a, getSemiMinor(a,e),color_array[0],Boolean(1));
 }
 
 drawMemory();
