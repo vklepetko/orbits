@@ -57,8 +57,7 @@ function refresh(){
   var a = Number(document.getElementById('textbox_a').value);
   var e = Number(document.getElementById('textbox_e').value);
   var b = getSemiMinor(a,e);
-  var cx = -a*e;
-  var cy = 0;
+  var [cx,cy] = getEllipseCenter(a,e);
     
   document.getElementById('textbox_a').value = a;
   document.getElementById('textbox_e').value = e;
@@ -74,7 +73,8 @@ function refresh(){
   
 };
 
-
+function getEllipseCenter(a,e):
+	return [-a*e, 0];
 
 function getSemiMinor(a,e){
   return Math.pow((Math.pow(a,2)-Math.pow(a*e,2)),1/2);
