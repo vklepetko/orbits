@@ -73,8 +73,9 @@ function refresh(){
   
 };
 
-function getEllipseCenter(a,e):
+function getEllipseCenter(a,e){
 	return [-a*e, 0];
+};
 
 function getSemiMinor(a,e){
   return Math.pow((Math.pow(a,2)-Math.pow(a*e,2)),1/2);
