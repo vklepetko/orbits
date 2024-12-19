@@ -136,7 +136,7 @@ major.setAttribute("x2",cx+rx);
 major.setAttribute("y2",cy);
 major.setAttribute("stroke-width","0.02");
 major.setAttribute("stroke","grey");
-major.setAttribute("stroke-dasharray","0.05");
+major.setAttribute("stroke-dasharray","0.02");
 
   
 
@@ -147,7 +147,7 @@ minor.setAttribute("x2",cx);
 minor.setAttribute("y2",cy+ry);
 minor.setAttribute("stroke-width","0.02");
 minor.setAttribute("stroke","grey");
-minor.setAttribute("stroke-dasharray","0.05");
+minor.setAttribute("stroke-dasharray","0.02");
 
 var focus2 = document.createElementNS("http://www.w3.org/2000/svg","circle");
 focus2.setAttribute("cx",cx-epsilon);
