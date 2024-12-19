@@ -216,7 +216,7 @@ function init(){
 	e = 0.6;
 	[cx,cy] = getEllipseCenter(a,e);
 	console.log([cx,cy,getSemiMinor(a,e)]);
-	drawEllipse(cx,cy,a, getSemiMinor(a,e),color_array[0],Boolean(1));
+	drawEllipse(a, getSemiMinor(a,e),cx,cy,color_array[0],Boolean(1));
 }
 
 drawMemory();
