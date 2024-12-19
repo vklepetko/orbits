@@ -218,7 +218,7 @@ function init(){
 	console.log([cx,cy,getSemiMinor(a,e)]);
 	drawEllipse(a, getSemiMinor(a,e),cx,cy,color_array[0],Boolean(1));
 	updateTextboxA(a);
-	updateTextboxE(e);
+	updateTextboxE(e*100);
 }
 
 drawMemory();
