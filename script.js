@@ -51,6 +51,17 @@ function zoom(fov){
 	document.getElementById('slider_a').max = (Number(fov)/2).toFixed(0);
  };
 
+function refresh_calculations(a,e){
+  document.getElementById('textbox_a').value = a;
+  document.getElementById('textbox_e').value = e;
+  document.getElementById('b_descr').innerHTML = getSemiMinor(a,e).toFixed(3);
+  document.getElementById('peri_descr').innerHTML = (a-e*a).toFixed(3);
+  document.getElementById('aphe_descr').innerHTML = (a+e*a).toFixed(3);
+  document.getElementById('epsi_descr').innerHTML = (e*a).toFixed(3);
+  document.getElementById('period_descr').innerHTML = Math.sqrt(a**3).toFixed(3);
+};
+	
+
 function refresh(){
   svg.innerHTML = "";
   
@@ -59,13 +70,7 @@ function refresh(){
   var b = getSemiMinor(a,e);
   var [cx,cy] = getEllipseCenter(a,e);
     
-  document.getElementById('textbox_a').value = a;
-  document.getElementById('textbox_e').value = e;
-  document.getElementById('b_descr').innerHTML = b.toFixed(3);
-  document.getElementById('peri_descr').innerHTML = (a-e*a).toFixed(3);
-  document.getElementById('aphe_descr').innerHTML = (a+e*a).toFixed(3);
-  document.getElementById('epsi_descr').innerHTML = (e*a).toFixed(3);
-  document.getElementById('period_descr').innerHTML = Math.sqrt(a**3).toFixed(3);
+  refreshCalculations(a,e);
 
   drawMemory();
   embellish=((Number(document.getElementById('checkbox_ellipse_lines').checked) ==1) ?  Boolean(1) : Boolean(0));
@@ -221,7 +226,7 @@ function init(){
 	updateTextboxE(e*100);
   	document.getElementById('slider_a').value = 5;
   	document.getElementById('slider_e').value = 60;
-	refresh();
+	refreshCalculations(a,e);
 }
 
 drawMemory();
