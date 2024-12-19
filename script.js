@@ -219,6 +219,8 @@ function init(){
 	drawEllipse(a, getSemiMinor(a,e),cx,cy,color_array[0],Boolean(1));
 	updateTextboxA(a);
 	updateTextboxE(e*100);
+  	document.getElementById('slider_a').value = 5;
+  	document.getElementById('slider_e').value = 60;
 }
 
 drawMemory();
