@@ -229,6 +229,13 @@ function init(){
 	refreshCalculations(a,e);
 }
 
+function export(e){
+  let svg = document.querySelector('svg').outerHTML;
+  let blob = new Blob([svg], {type : 'image/svg+xml'});
+  e.target.href = URL.createObjectURL(blob);
+	
+};
+
 drawMemory();
 init();
 
