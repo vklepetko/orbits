@@ -192,7 +192,7 @@ function save(){
     var a_slider = document.getElementById('textbox_a');
     a_slider.value = Number(a_slider.value)*2;
     refresh();
-  console.log(element_memory)
+  //console.log(element_memory)
   //drawEllipse(1.5*rx,1.5*ry,cx,cy,"red",embellish=Boolean(1));
 };
 
