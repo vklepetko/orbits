@@ -232,7 +232,7 @@ function init(){
 function exportSVG(e){
   let svg = document.querySelector('svg').outerHTML;
   let blob = new Blob([svg], {type : 'image/svg+xml'});
-  e.target.location.href = URL.createObjectURL(blob);
+  window.location.href = URL.createObjectURL(blob);
 	
 };
 
